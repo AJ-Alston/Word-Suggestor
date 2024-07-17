@@ -169,10 +169,14 @@ public class Spelling {
 
         public static void main(String[] args) {
             //File located in the src file. Download and insert filepath containing dictionary file.
-            //File must have first row, "TRUE" row, and "FALSE" row deleted
+            if (args.length < 1) {
+                System.out.println("Please provide the filepath as a command-line argument.");
+                return;
+            }
+            String filepath = args[0];
 
             //Enter filepath into Spelling constructor
-            Spelling spell = new Spelling(/*Enter filepath for Unigram_freq.csv on your device here ->*/"");
+            Spelling spell = new Spelling(filepath);
 
             //Enter prefix you would like to suggest words for and how many suggestions for token and count
             List<List<String>> output = spell.suggest("hello",7);
