@@ -169,20 +169,20 @@ public class Spelling {
 
         public static void main(String[] args) {
             //File located in the src file. Download and insert filepath containing dictionary file.
-            //Enter filepath as arg[0] and prefix to be checked as arg[1]
+            //Enter filepath as arg[0], prefix to be checked as arg[1], and amount of suggestions as args[2]
             if (args.length < 1) {
                 System.out.println("Please provide the filepath as a command-line argument.");
                 return;
             }
             String filepath = args[0];
-            String prefix=args[1];
-                
+            String prefix= args[1];
+int         int count = Integer.parseInt(args[2]);
 
             //Enter filepath into Spelling constructor
             Spelling spell = new Spelling(filepath);
 
             //Enter prefix you would like to suggest words for and how many suggestions for token and count
-            List<List<String>> output = spell.suggest(prefix,7);
+            List<List<String>> output = spell.suggest(prefix,count);
 
             //Print all suggestions for each character entered
             for (int i = 0; i < output.size(); i++) {
