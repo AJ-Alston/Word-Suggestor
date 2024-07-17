@@ -33,6 +33,10 @@ public class CSVReader {
 
         try {
             BufferedReader reader = new BufferedReader(new FileReader(path));
+
+            // Skip the first line (word count)
+            reader.readLine();
+            
             //Read file by line places strings in an array, add word to list, and add key+values to map
             while ((line = reader.readLine()) != null) {
 
