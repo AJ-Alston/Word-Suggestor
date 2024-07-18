@@ -36,7 +36,7 @@ Levenshtein Distance Algorithm: The Levenshtein distance measures the minimum nu
 	- If not, take the minimum of (i-1, j), (i, j-1), and (i-1, j-1) and add 1 
 4. The bottom-right cell contains the Levenshtein distance Time complexity: O(mn), where m and n are the lengths of the strings Space complexity: O(mn) for the matrix 
 
-Machine Learning Approach (Theoretical): A machine learning model could be trained on a large dataset of correct and misspelled word pairs. Possible approaches include: 
+Machine Learning Approach: A machine learning model could be trained on a large dataset of correct and misspelled word pairs. Possible approaches include: 
 1. Sequence-to-sequence models (e.g., LSTM or Transformer architectures) 
 2. Character-level embeddings combined with a neural network 
 3. N-gram models with statistical analysis 
