@@ -1,4 +1,4 @@
-Word Counter and Suggestion Software 
+Word Suggestion Software 
 
 Overview: This software utilizes a database of 333,333 of Google's most frequently typed words to suggest words based on an input prefix. The number of suggestions can be customized by the user. 
 
