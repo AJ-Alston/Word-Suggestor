@@ -23,9 +23,11 @@ Usage for Developers:
 Potential Improvements: 
 Optimizing program to include spelling corrections for misspelled words. Possible implementation methods:
 
-a. Create a file of commonly misspelled words and check each input against this list 
-b. Implement the Levenshtein distance algorithm to find similar words 
-c. Utilize a machine learning algorithm for dynamic updating of misspellings 
+-Create a file of commonly misspelled words and check each input against this list 
+
+-Implement the Levenshtein distance algorithm to find similar words 
+
+-Utilize a machine learning algorithm for dynamic updating of misspellings 
 
 Commonly misspelled words: A list of common words misspellings and the correct spellings could be scanned to check if there are any additional suggestions. This would increase required memory for program but could implement functionality. 
 
