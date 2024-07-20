@@ -56,3 +56,5 @@ Implementation would involve:
 2. Model selection and training 
 3. Integration with the existing suggestion system 
 4. Continuous evaluation and refinement based on user feedback These improvements would significantly enhance the software's ability to handle various misspellings and provide more accurate suggestions.
+
+This project was apart of CS245 Spring 2022 at University of San Francisco
